@@ -63,12 +63,17 @@
   font-weight: lighter;
 }
 
-.content {
+.most-recent,
+.all-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.all-items {
+  display: none;
 }
 .product {
   width: 300px;
