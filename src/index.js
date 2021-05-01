@@ -1,9 +1,23 @@
+var modal = document.getElementById("myModal");
+
+function showModal() {
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
 function showContents(e) {
   const allItems = document.getElementsByClassName("all-items")[0];
   const mostRecent = document.getElementsByClassName("most-recent")[0];
   const firstOption = document.getElementsByClassName("option1")[0];
   const secondOption = document.getElementsByClassName("option2")[0];
-  console.log(allItems);
   if (
     window.getComputedStyle(mostRecent).display != "none" &&
     window.getComputedStyle(allItems).display === "none" &&

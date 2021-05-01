@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="./src/style.css" type="text/css" />
   </head>
   <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>ADD ITEM</h3>
+        <br />
+        <form>
+          <label for="item-name">Brand:</label>
+          <input type="text" id="item-name" name="item-name" /><br />
+          <br />
+          <label for="item-size">Size:</label>
+          <input type="text" id="item-size" name="item-size" /><br />
+          <br />
+          <label for="item-price">Price:</label>
+          <input type="text" id="item-price" name="item-price" /><br />
+          <br />
+          <label for="item-img">Add image:</label>
+          <input
+            type="file"
+            id="item-img"
+            name="item-img"
+            accept="image/*"
+          /><br />
+          <br />
+          <br />
+          <input type="submit" value="Submit" id="submitItem" />
+        </form>
+      </div>
+    </div>
     <div class="container">
       <div class="topbar">
         <img src="../images/LogoVintageApparel.png" alt="logo" class="logo" />
@@ -17,31 +45,31 @@
         <div class="splitter">
           <div class="option1" onclick="showContents(event)">MOST RECENT</div>
           <div class="option2" onclick="showContents(event)">ALL ITEMS</div>
-          <button class="add-item">ADD ITEM</button>
+          <button id="add-itemBtn" onclick="showModal()">ADD ITEM</button>
         </div>
         <div class="most-recent">
           <section class="item">
             <img src="../images/item4.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Fred Perry</li>
+              <li>M</li>
+              <li>60</li>
             </ul>
           </section>
           <section class="item">
             <img src="../images/item5.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Champion</li>
+              <li>XL</li>
+              <li>150</li>
             </ul>
           </section>
           <section class="item">
             <img src="../images/item6.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Tommy Hilfiger</li>
+              <li>S</li>
+              <li>175</li>
             </ul>
           </section>
         </div>
@@ -49,49 +77,49 @@
           <section class="item">
             <img src="../images/item1.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Polo</li>
+              <li>M</li>
+              <li>50</li>
             </ul>
           </section>
           <section class="item">
             <img src="../images/item2.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Levis</li>
+              <li>XL</li>
+              <li>100</li>
             </ul>
           </section>
           <section class="item">
             <img src="../images/item3.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Tommy Hilfiger</li>
+              <li>M</li>
+              <li>50</li>
             </ul>
           </section>
           <section class="item">
             <img src="../images/item4.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Fred Perry</li>
+              <li>M</li>
+              <li>60</li>
             </ul>
           </section>
           <section class="item">
             <img src="../images/item5.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Champion</li>
+              <li>XL</li>
+              <li>150</li>
             </ul>
           </section>
           <section class="item">
             <img src="../images/item6.jpg" alt="product" class="product" />
             <ul class="item-details">
-              <li>Item Name</li>
-              <li>Size</li>
-              <li>Price</li>
+              <li>Tommy Hilfiger</li>
+              <li>S</li>
+              <li>175</li>
             </ul>
           </section>
         </div>
