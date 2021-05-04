@@ -15,6 +15,12 @@
   margin-top: 30px;
   width: 200px;
   height: 200px;
+  padding: 20px;
+}
+.logo:hover {
+  width: 220px;
+  height: 220px;
+  padding: 10px;
 }
 .titlename {
   margin-left: 20px;

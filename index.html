@@ -13,15 +13,27 @@
         <span class="close" onclick="closeModal()">&times;</span>
         <h3>ADD ITEM</h3>
         <br />
-        <form>
+        <div>
           <label for="item-name">Brand:</label>
-          <input type="text" id="item-name" name="item-name" /><br />
+          <input type="text" id="item-name" name="item-name" required /><br />
           <br />
           <label for="item-size">Size:</label>
-          <input type="text" id="item-size" name="item-size" /><br />
+          <select id="item-size" name="item-size" required>
+            <option></option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option></select
+          ><br />
           <br />
           <label for="item-price">Price:</label>
-          <input type="text" id="item-price" name="item-price" /><br />
+          <input
+            type="number"
+            id="item-price"
+            name="item-price"
+            required
+          />LEI<br />
           <br />
           <label for="item-img">Add image:</label>
           <input
@@ -29,11 +41,17 @@
             id="item-img"
             name="item-img"
             accept="image/*"
+            required
           /><br />
           <br />
           <br />
-          <input type="submit" value="Submit" id="submitItem" />
-        </form>
+          <input
+            type="submit"
+            value="Submit"
+            id="submitItem"
+            onclick="addItem()"
+          />
+        </div>
       </div>
     </div>
     <div class="container">
