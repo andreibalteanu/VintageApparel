@@ -2,15 +2,27 @@ var modal = document.getElementById("myModal");
 
 function showModal() {
   modal.style.display = "block";
+  document.querySelectorAll(".item").forEach((value) => {
+    value.classList.toggle("item");
+    value.classList.add("item-replacement");
+  });
 }
 
 function closeModal() {
   modal.style.display = "none";
+  document.querySelectorAll(".item-replacement").forEach((value) => {
+    value.classList.toggle("item");
+    value.classList.remove("item-replacement");
+  });
 }
 
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.querySelectorAll(".item-replacement").forEach((value) => {
+      value.classList.toggle("item");
+      value.classList.remove("item-replacement");
+    });
   }
 };
 function showContents(e) {
